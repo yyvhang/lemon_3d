@@ -8,3 +8,14 @@ PyTorch implementation of **LEMON: Learning 3D Human-Object Interaction Relation
 1. - [ ] release the pretrained LEMON and the code to run a demo.
 2. - [ ] release the training and evaluation code.
 3. - [ ] release the 3DIR dataset.
+
+## 🔍 Citation
+
+```
+@article{yang2023lemon,
+  title={LEMON: Learning 3D Human-Object Interaction Relation from 2D Images},
+  author={Yang, Yuhang and Zhai, Wei and Luo, Hongchen and Cao, Yang and Zha, Zheng-Jun},
+  journal={arXiv preprint arXiv:2312.08963},
+  year={2023}
+}
+```
