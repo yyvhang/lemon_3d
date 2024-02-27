@@ -1,0 +1,6 @@
+val_image: 'Data/txt_scripts/val.txt'
+val_pts: 'Data/txt_scripts/Point_val.txt'
+human_3DIR: 'Data/smplh_param/human_label.json'
+behave: 'Data/Behave/behave.json'
+best_checkpoint: 'checkpoints/LEMON_D.pt'
+emb_dim: 768

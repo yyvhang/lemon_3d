@@ -1,0 +1,16 @@
+train_image: 'Data/txt_scripts/train.txt'
+val_image: 'Data/txt_scripts/val.txt'
+train_pts: 'Data/txt_scripts/Point_train.txt'
+val_pts: 'Data/txt_scripts/Point_val.txt'
+human_3DIR: 'Data/smplh_param/human_label.json'
+behave: 'Data/Behave/behave.json'
+lr_rate: 0.0001
+decay_rate: 0.001
+Epoch: 80
+emb_dim: 768
+pairing_num: 1
+run_type: 'train'
+w1: 40.0
+w2: 40.0
+w3: 20.0
+w4: 20.0

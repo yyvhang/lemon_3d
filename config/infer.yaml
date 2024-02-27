@@ -1,0 +1,12 @@
+val_image: 'Data/txt_scripts/val.txt'
+val_pts: 'Data/txt_scripts/Point_val.txt'
+human_3DIR: 'Data/smplh_param/human_label.json'
+behave: 'Data/Behave/behave.json'
+best_checkpoint: 'checkpoints/LEMON_D.pt'
+run_type: 'infer'
+contact_result_folder: 'Ouputs/Human/'
+affordance_result_folder: 'Ouputs/Object/'
+spatial_result_folder: 'Ouputs/Spatial/'
+emb_dim: 768
+infer_type: 'single'
+curvature: True
