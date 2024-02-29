@@ -31,7 +31,7 @@ LEMON seek to parse the 3D HOI elements through 2D images:
 
 ## 💡Requirements <a name="2"></a> 
 (1) Download the [SMPL-H](https://mano.is.tue.mpg.de/download.php) used in AMASS project, put them under the folder `smpl_models/smplh/`. <br> 
-(2) Download the [SMPL](https://smpl.is.tue.mpg.de/) (version 1.1.0), and put the `smpl_neutral_geodesic_dist.npy` under folder `smpl_models/`, this is used to compute the metrics geo. <br>
+(2) Download the [`smpl_neutral_geodesic_dist.npy`](https://rich.is.tue.mpg.de/download.php) and put it under the folder `smpl_models/`, this is used to compute the metrics geo. <br>
 (3) Download the pre-trained [HRNet](https://datarelease.blob.core.windows.net/metro/models/hrnetv2_w40_imagenet_pretrained.pth), put `.pth` file under the folder `tools/models/hrnet/config/hrnet/`. <br>
 (4) Download the pre-trained [LEMON](https://drive.google.com/drive/folders/1BPVPLuz1igoz7Ky_RjmHf1arBhlubLns?usp=sharing) (DGCNN as backbone), put `.pt` files under the folder `checkpoints/`, we release checkpoints with and without curvatures.
 
