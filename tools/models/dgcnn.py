@@ -107,7 +107,7 @@ class DGCNN(nn.Module):
         self.bn4 = nn.BatchNorm2d(64)
         self.bn5 = nn.BatchNorm2d(64)
         self.bn6 = nn.BatchNorm1d(self.emb_dim)
-        self.bn7 = nn.BatchNorm1d(768)
+        self.bn8 = nn.BatchNorm1d(768)
 
         self.conv1 = nn.Sequential(nn.Conv2d(6, 64, kernel_size=1, bias=False),
                                    self.bn1,
@@ -127,8 +127,8 @@ class DGCNN(nn.Module):
         self.conv6 = nn.Sequential(nn.Conv1d(192, self.emb_dim, kernel_size=1, bias=False),
                                    self.bn6,
                                    nn.LeakyReLU(negative_slope=0.2))
-        self.conv7 = nn.Sequential(nn.Conv1d(1216, 768, kernel_size=1, bias=False),
-                                   self.bn7,
+        self.conv8 = nn.Sequential(nn.Conv1d(1216, 768, kernel_size=1, bias=False),
+                                   self.bn8,
                                    nn.LeakyReLU(negative_slope=0.2))
         self.dp1 = nn.Dropout(p=0.5)
         
@@ -165,7 +165,7 @@ class DGCNN(nn.Module):
 
         x = torch.cat((x, x1, x2, x3), dim=1)   
 
-        x = self.conv7(x)                      
+        x = self.conv8(x)                      
         x = self.dp1(x)
 
         return x
