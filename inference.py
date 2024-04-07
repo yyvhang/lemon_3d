@@ -258,9 +258,8 @@ if __name__ == '__main__':
     else:
         device = torch.device("cpu")
 
-    val_dataset = _3DIR(dict['val_image'], dict['val_pts'], dict['human_3DIR'], dict['behave'], mode='val')
-    val_loader = DataLoader(val_dataset, batch_size=opt.batch_size, shuffle=False, num_workers=8)
     curvature = dict['curvature']
+    print('whether to use curvature:', curvature)
     if curvature:
         model = LEMON(dict['emb_dim'], run_type='infer', device=device)
     else:
@@ -268,6 +267,8 @@ if __name__ == '__main__':
     #batch
     infer_type = dict['infer_type']
     if infer_type == 'batch':
+        val_dataset = _3DIR(dict['val_image'], dict['val_pts'], dict['human_3DIR'], dict['behave'], mode='val')
+        val_loader = DataLoader(val_dataset, batch_size=opt.batch_size, shuffle=False, num_workers=8)
         inference_batch(opt, dict, val_loader, model, device)
     elif infer_type == 'single':
         if curvature:
