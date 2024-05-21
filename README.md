@@ -7,7 +7,7 @@ PyTorch implementation of **LEMON: Learning 3D Human-Object Interaction Relation
 ## 📖 To Do List
 1. - [X] release the pretrained LEMON.
 2. - [X] release the inference, training and evaluation code.
-3. - [ ] release the 3DIR dataset.
+3. - [ ] release the 3DIR dataset (before the conference).
 
 ## 📋 Table of content
  1. [❗ Overview](#1)
