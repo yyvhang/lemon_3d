@@ -35,7 +35,7 @@ class _3DIR(Dataset):
         self.mode = mode
         self.img_files = self.read_file(img_file)
         self.data_dict = json.load(open(human_file, 'r'))
-        self.behave_dict = json.load(open(behave_file, 'r'))
+        # self.behave_dict = json.load(open(behave_file, 'r'))
 
         if mode == 'train':
             number_dict = {'Earphone':0, 'Baseballbat':0, 'Tennisracket':0, 'Bag':0, 'Motorcycle':0, 'Guitar':0, 
@@ -60,7 +60,7 @@ class _3DIR(Dataset):
         self.img_size = (224, 224)
         self.Hm_curvaure_folder = 'Data/Curvature/Human'
         self.Obj_curvaure_folder = 'Data/Curvature/Object'
-        self.Behave_curvaure_folder = 'Data/Curvature/Behave'
+        # self.Behave_curvaure_folder = 'Data/Curvature/Behave'
         self.Spatial_folder = 'Data/obj_center'
 
     def __len__(self):

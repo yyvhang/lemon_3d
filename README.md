@@ -7,7 +7,7 @@ PyTorch implementation of **LEMON: Learning 3D Human-Object Interaction Relation
 ## 📖 To Do List
 1. - [X] release the pretrained LEMON.
 2. - [X] release the inference, training and evaluation code.
-3. - [ ] release the 3DIR dataset (before the conference).
+3. - [X] release the 3DIR dataset.
 
 ## 📋 Table of content
  1. [❗ Overview](#1)
@@ -47,7 +47,8 @@ The 3DIR dataset includes the following data: <br>
 (3) Dense 3D object affordance annotation. <br>
 (4) Pesudo-SMPLH parameters. <br>
 (5) Annotation of the Human-Object spatial relation. <br>
-The dataset will be released soon!
+
+Download the 3DIR dataset from [Google Drive](https://drive.google.com/drive/folders/1yucDqpVLL1wBWtP4aKmUSMsgbNbQ2Cp9?usp=sharing) or [Baidu Pan](https://pan.baidu.com/s/1J7u893xKFIq63lrAiKbpOA?pwd=3DIR) (key: 3DIR). Please refer to `Data/data.md` for more details of 3DIR.
 
 ## ✏️ Usage <a name="4"></a>
 ### Environment <a name="41"></a> 
