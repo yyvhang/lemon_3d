@@ -55,7 +55,7 @@ class _3DIR(Dataset):
             self.obj_files = self.read_file(obj_file)
 
         self.affordance_list = ['grasp', 'lift', 'open', 'lay', 'sit', 'support', 'wrapgrasp', 'pour', 
-                        'move', 'pull', 'wear', 'press', 'cut', 'stab', 'ride', 'play', 'carry']
+                        'move', 'pull', 'listen', 'press', 'cut', 'stab', 'ride', 'play', 'carry']
         
         self.img_size = (224, 224)
         self.Hm_curvaure_folder = 'Data/Curvature/Human'

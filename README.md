@@ -48,7 +48,7 @@ The 3DIR dataset includes the following data: <br>
 (4) Pesudo-SMPLH parameters. <br>
 (5) Annotation of the Human-Object spatial relation. <br>
 
-Download the 3DIR dataset from [Google Drive](https://drive.google.com/drive/folders/1yucDqpVLL1wBWtP4aKmUSMsgbNbQ2Cp9?usp=sharing) or [Baidu Pan](https://pan.baidu.com/s/1J7u893xKFIq63lrAiKbpOA?pwd=3DIR) (key: 3DIR). Please refer to `Data/data.md` for more details of 3DIR.
+Download the 3DIR dataset from [Google Drive](https://drive.google.com/drive/folders/1yucDqpVLL1wBWtP4aKmUSMsgbNbQ2Cp9?usp=sharing) or [Baidu Pan](https://pan.baidu.com/s/17V4VUw9Ow8mChoP1FRyeGw?pwd=3DIR) (key: 3DIR). Please refer to `Data/DATA.md` for more details of 3DIR.
 
 ## ✏️ Usage <a name="4"></a>
 ### Environment <a name="41"></a> 
@@ -83,7 +83,7 @@ bash train.sh
 ### Evaluation <a name="44"></a>
 Run the following command to evaluate the model, you could see the setting at `config/eval.yaml`.
 ```bash  
-python eval.py --config config/eval.yaml
+python eval.py --yaml config/eval.yaml
 ```
 If you take LEMON as a comparative baseline, please indicate whether to use curvature.
 

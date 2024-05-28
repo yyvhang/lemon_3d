@@ -77,4 +77,6 @@ def visual_contact(pkl_file):
 
 7. `txt_scripts/` specifies the data for training and testing.
 
+PS: There is a typo in the main paper Fig. 3, `wear` should be `listen`.
+
 Due to the licence, we are unable to directly release the data of BEHAVE. If there is a need, please contact `yyuhang@mail.ustc.edu.cn` and we will consider providing the data id we used in LEMON.
